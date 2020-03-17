@@ -36,7 +36,7 @@ def data_collect(dict):
         # else just parse
         else:
             parse[key] = value
-    print(parse)
+    # print(parse)
     return parse
 
 def test_data_collect():
@@ -49,4 +49,4 @@ def test_data_collect():
     assert data_collect(data3) == {'Pulse': None, 'BP': 120, 'OL': 340}
     assert data_collect(data4) == {'Pulse': None, 'BP': None, 'OL': 340}
 
-test_data_collect()
+# test_data_collect()
