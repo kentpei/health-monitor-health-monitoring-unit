@@ -3,10 +3,10 @@ def monitor(data):
 		if len(data)!=3:
 			print("wrong input length")
 		else:
-			output_type = ["Pulse", "Blood Pressure", "Oxygen Level"]
+			output_type = ["Pulse", "BP", "OL"]
 			for i in range(0,3):
-				if str(data[i]).isdigit():
-					print(output_type[i] + ": " + str(data[i]))
+				if str(data[output_type[i]]).isdigit():
+					print(output_type[i] + ": " + str(data[output_type[i]]))
 				else:
 					print(output_type[i] + " has wrong input type")
 					break
@@ -17,6 +17,5 @@ def monitor(data):
 
 
 # test cases:
-# monitor([23, 4, 5])
-# monitor([3])
-# monitor([12, "ff", 3])
+# a = { "Pulse" : 12,  "BP" : 120, "OL" : 340}
+# monitor(a)
